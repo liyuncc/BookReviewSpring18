@@ -20,8 +20,8 @@ namespace BookReviewSpring18.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index([Bind(Include = "ReviewerUserName, ReviewerFirstName, ReviewerLastName" +
-            "ReviwerEmail, ReviewPlainPassword")] Reviewer r)
+        public ActionResult Index([Bind(Include = "ReviewerUserName, ReviewerFirstName, ReviewerLastName," +
+            "ReviewerEmail, ReviewPlainPassword")] Reviewer r)
         {
             Message m = new Message();
             int result = db.usp_NewReviewer(r.ReviewerUserName, r.ReviewerFirstName, r.ReviewerLastName,
