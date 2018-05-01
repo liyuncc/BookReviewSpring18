@@ -29,6 +29,7 @@ namespace BookReviewSpring18.Controllers
             if (result != -1)
             {
                 m.MessageText = "Welcome, " + r.ReviewerFirstName;
+                
             }
             else
             {
