@@ -12,7 +12,7 @@ namespace BookReviewSpring18.Controllers
 {
     public class BooksController : Controller
     {
-        private BookReviewDbEntities db = new BookReviewDbEntities();
+        public BookReviewDbEntities db = new BookReviewDbEntities();
 
         // GET: Books
         public ActionResult Index()
